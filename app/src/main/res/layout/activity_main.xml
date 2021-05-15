@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerMainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <include layout="@layout/app_bar_main" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/basicInfoScrollViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:id="@+id/basicInfoBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:id="@+id/meterIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/standardMargin"
+                        android:layout_marginTop="@dimen/standardMargin"
+                        android:layout_marginEnd="@dimen/standardMargin"
+                        android:layout_marginBottom="@dimen/standardMargin"
+                        android:background="@color/paleGrey"
+                        android:contentDescription="meterIcon"
+                        android:src="@drawable/activity_main_meter_icon" />
+
+                    <TextView
+                        android:id="@+id/totalMeters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/standardMargin"
+                        android:layout_toEndOf="@+id/meterIcon"
+                        android:text="4"
+                        android:textSize="@dimen/halfStandardTextSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/totalMeters"
+                        android:layout_marginEnd="@dimen/doubleStandardMargin"
+                        android:layout_toEndOf="@+id/meterIcon"
+                        android:text="Total Meters"
+                        android:textSize="@dimen/halfStandardTextSize" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:id="@+id/totalUsageIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/standardMargin"
+                        android:layout_marginTop="@dimen/standardMargin"
+                        android:layout_marginEnd="@dimen/standardMargin"
+                        android:layout_marginBottom="@dimen/standardMargin"
+                        android:background="@color/blue"
+                        android:contentDescription="meterIcon"
+                        android:src="@drawable/activity_login_total_usage" />
+
+                    <TextView
+                        android:id="@+id/totalUsageNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/standardMargin"
+                        android:layout_toEndOf="@+id/totalUsageIcon"
+                        android:text="3.624.744"
+                        android:textSize="@dimen/halfStandardTextSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/totalUsageNumber"
+                        android:layout_marginEnd="@dimen/doubleStandardMargin"
+                        android:layout_toEndOf="@+id/totalUsageIcon"
+                        android:text="Total Usage [m3]"
+                        android:textSize="@dimen/halfStandardTextSize" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:id="@+id/totalReadoutsIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/standardMargin"
+                        android:layout_marginTop="@dimen/standardMargin"
+                        android:layout_marginEnd="@dimen/standardMargin"
+                        android:layout_marginBottom="@dimen/standardMargin"
+                        android:background="@color/green"
+                        android:contentDescription="meterIcon"
+                        android:src="@drawable/activity_main_total_readouts" />
+
+                    <TextView
+                        android:id="@+id/totalReadoutsNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/standardMargin"
+                        android:layout_toEndOf="@+id/totalReadoutsIcon"
+                        android:text="58.300"
+                        android:textSize="@dimen/halfStandardTextSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/totalReadoutsNumber"
+                        android:layout_marginEnd="@dimen/doubleStandardMargin"
+                        android:layout_toEndOf="@+id/totalReadoutsIcon"
+                        android:text="Total Readouts"
+                        android:textSize="@dimen/halfStandardTextSize" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:id="@+id/totalErrorsIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/standardMargin"
+                        android:layout_marginTop="@dimen/standardMargin"
+                        android:layout_marginEnd="@dimen/standardMargin"
+                        android:layout_marginBottom="@dimen/standardMargin"
+                        android:background="@color/red"
+                        android:contentDescription="meterIcon"
+                        android:src="@drawable/activity_main_error_icon" />
+
+                    <TextView
+                        android:id="@+id/totalErrorsNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/standardMargin"
+                        android:layout_toEndOf="@+id/totalErrorsIcon"
+                        android:text="4"
+                        android:textSize="@dimen/halfStandardTextSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/totalErrorsNumber"
+                        android:layout_marginEnd="@dimen/doubleStandardMargin"
+                        android:layout_toEndOf="@+id/totalErrorsIcon"
+                        android:text="Total Errors"
+                        android:textSize="@dimen/halfStandardTextSize" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/activity_main_recycler_view_container_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/basicInfoScrollViewMain" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/blue"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/halfStandardMargin"
+            android:layout_marginBottom="@dimen/doubleStandardMargin"
+            android:text="GWF"
+            android:textColor="@color/white"
+            android:textSize="@dimen/doubleTextSize" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/settingsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

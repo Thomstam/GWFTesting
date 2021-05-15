@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_corner_shape_white"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:text="Measuring Point"
+        android:textColor="@color/secondaryBasic"
+        android:textSize="@dimen/midHalfStandardTextSize" />
+
+    <TextView
+        android:id="@+id/measurementPointActivityMeasurementPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:text="700_seestrasseCham"
+        android:textColor="@color/black"
+        android:textSize="@dimen/midHalfStandardTextSize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:background="@android:color/darker_gray" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:text="Meter"
+        android:textColor="@color/secondaryBasic"
+        android:textSize="@dimen/midHalfStandardTextSize" />
+
+    <TextView
+        android:id="@+id/measurementPointActivityMeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:text="GWFP0066P"
+        android:textColor="@color/black"
+        android:textSize="@dimen/midHalfStandardTextSize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:text="Module"
+        android:textColor="@color/secondaryBasic"
+        android:textSize="@dimen/midHalfStandardTextSize" />
+
+    <TextView
+        android:id="@+id/measurementPointActivityModule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:text="GWFP0066P (AFM)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/midHalfStandardTextSize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:text="Volume"
+        android:textColor="@color/secondaryBasic"
+        android:textSize="@dimen/midHalfStandardTextSize" />
+
+    <TextView
+        android:id="@+id/measurementPointActivityVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+
+        android:text="2911.000000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/midHalfStandardTextSize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:layout_marginBottom="@dimen/standardMargin"
+        android:background="@android:color/darker_gray" />
+
+
+</LinearLayout>

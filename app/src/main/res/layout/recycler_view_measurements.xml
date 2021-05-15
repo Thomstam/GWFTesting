@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/recycler_view_meter_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:text="GWFP0066P"
+        android:textSize="@dimen/halfStandardTextSize" />
+
+    <ImageView
+        android:id="@+id/recycler_view_map_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycler_view_meter_id"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:layout_marginBottom="@dimen/halfStandardMargin"
+        android:contentDescription="mapsIcon"
+        android:src="@drawable/recycler_view_maps_icon" />
+
+    <TextView
+        android:id="@+id/recycler_view_mp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/recycler_view_map_icon"
+        android:layout_below="@+id/recycler_view_meter_id"
+        android:text="700_seestrasseCham"
+        android:layout_toStartOf="@+id/recycler_view_comm_mod_serial"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="@dimen/halfStandardMargin"
+        android:textSize="@dimen/halfStandardTextSize"
+        />
+
+
+    <TextView
+        android:id="@+id/recycler_view_comm_mod_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:text="Fuelics, Encoder"
+        android:textSize="@dimen/halfStandardTextSize" />
+
+    <TextView
+        android:id="@+id/recycler_view_comm_mod_serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycler_view_comm_mod_type"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:layout_marginBottom="@dimen/halfStandardMargin"
+        android:text="GWFP0066P"
+        android:textSize="@dimen/halfStandardTextSize" />
+
+    <View
+        android:id="@+id/grayLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/recycler_view_comm_mod_serial"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

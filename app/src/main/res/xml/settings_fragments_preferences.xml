@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="OVERVIEW">
+
+        <Preference
+            android:icon="@drawable/settings_fragment_dashboard_icon"
+            android:key="settings_fragment_dashboard"
+            app:title="Dashboard" />
+
+        <Preference
+            android:icon="@drawable/settings_fragment_report_icon"
+            android:key="settings_fragment_reports"
+            app:title="Reports" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="DEVICE MANAGEMENT">
+
+        <Preference
+            android:icon="@drawable/settings_fragment_order_icon"
+            android:key="settings_fragment_order"
+            app:title="Orders" />
+
+        <Preference
+            android:icon="@drawable/settings_fragment_keys_icon"
+            android:key="settings_fragment_keys"
+            app:title="Keys" />
+
+        <Preference
+            android:icon="@drawable/settings_fragment_transfer_history_icon"
+            android:key="settings_fragment_transfer_history"
+            app:title="Transfer History" />
+
+        <Preference
+            android:icon="@drawable/activity_main_meter_icon"
+            android:key="settings_fragment_measuring_points"
+            app:title="Measuring Points" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="USER MANAGEMENT">
+
+        <Preference
+            android:icon="@drawable/settings_fragment_companies_icon"
+            android:key="settings_fragment_companies"
+            app:title="Companies" />
+
+        <Preference
+            android:key="settings_fragment_users"
+            app:title="Users"
+            android:icon="@drawable/settings_fragment_users_icon"/>
+
+        <Preference
+            android:key="settings_fragment_logout"
+            app:title="Logout"
+            android:icon="@drawable/settings_fragment_logout_icon"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="RtlSymmetry"
+    android:background="@color/blue">
+
+    <ImageView
+        android:id="@+id/ProfilePicture"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:layout_marginBottom="@dimen/standardMargin"
+        android:contentDescription="Profile Picture"
+        android:src="@drawable/navigation_header_main_account_picture"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/nicknameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ProfilePicture"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginBottom="@dimen/standardMargin"
+        android:text="Nickname:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/midHalfStandardTextSize"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/nicknameSetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ProfilePicture"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_toEndOf="@id/nicknameText"
+        android:textSize="@dimen/midHalfStandardTextSize" />
+
+    <ImageButton
+        android:id="@+id/navigationHeaderEditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:background="@android:color/transparent"
+        android:contentDescription="EditButton"
+        android:src="@drawable/navigation_header_main_edit"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/grayLine"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/nicknameText"
+        android:layout_marginTop="@dimen/halfStandardMargin"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>
